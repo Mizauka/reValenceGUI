@@ -65,7 +65,7 @@ import calibrationSettings from "../compose/calibrationSettings.vue";
     <div class="example-page" page-id="3">
       <mdui-layout v-if="currentPageColumn > 1">
         <mdui-layout-item placement="top">
-          <mdui-button-icon
+          <mdui-button-icon v-if="currentPageColumn != 3"
             icon="arrow_back"
             @click="goToPage('1')"
           ></mdui-button-icon>
