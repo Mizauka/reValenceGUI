@@ -1,7 +1,7 @@
 <template>
   <mdui-list>
     <mdui-list-subheader>2026/5/7</mdui-list-subheader>
-    <mdui-list-item v-for="n in 3"
+    <mdui-list-item
       icon="medication"
       end-icon="edit"
       rounded
@@ -10,7 +10,7 @@
       <span slot="description">Supporting text</span>
     </mdui-list-item>
     <mdui-list-subheader>2026/4/28</mdui-list-subheader>
-    <mdui-list-item v-for="n in 2"
+    <mdui-list-item
       icon="medication"
       end-icon="edit"
       rounded

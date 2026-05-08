@@ -1,9 +1,6 @@
 <script setup lang="ts">
-import { isMobile } from "../router";
-import { currentBreakpoint } from "../router";
 import { useSlidingPanel } from "../composables/slidingPanel";
-const { goToPage, currentPageColumn, currentPageLeft, activePageIds } =
-  useSlidingPanel();
+const { currentPageColumn } = useSlidingPanel();
 import chart from "../compose/chart.vue";
 import history from "../compose/history.vue";
 import charttitle from "../compose/charttitle.vue";

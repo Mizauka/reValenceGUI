@@ -1,3 +1,13 @@
+<script setup lang="ts">
+import { ref } from "vue";
+
+const calibModel = ref("ratio");
+
+function onModelChange(e: Event) {
+  calibModel.value = (e.target as HTMLElement).getAttribute("value") ?? "ratio";
+}
+</script>
+
 <template>
   <div style="padding-left: 10px; padding-right: 10px">
     <p class="step-desc">选择后验校准算法以优化血药浓度预测</p>

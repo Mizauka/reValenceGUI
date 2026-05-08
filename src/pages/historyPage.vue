@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import { isMobile, currentBreakpoint } from "../router";
 import { useSlidingPanel } from "../composables/slidingPanel";
-const { goToPage, currentPageColumn, currentPageLeft, activePageIds } =
-  useSlidingPanel();
+const { goToPage, currentPageColumn } = useSlidingPanel();
 import history from "../compose/history.vue";
 import calibration from "../compose/calibration.vue";
 import calibrationSettings from "../compose/calibrationSettings.vue";
