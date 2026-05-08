@@ -1,0 +1,59 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+  position: relative;
+  overflow: hidden
+}
+
+
+.example-container {
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.example-container[page-column="1"] {
+  display: flex;
+  overflow: hidden;
+  height: auto;
+}
+
+.example-page {
+  height: 100%;
+  flex: 1;
+  overflow: auto;
+}
+
+.example-page:not([active]) {
+  overflow: hidden;
+}
+
+mdui-bottom-app-bar mdui-button-icon[selected] {
+  background-color: rgb(var(--mdui-color-primary-container));
+  color: rgb(var(--mdui-color-primary));
+}
+
+mdui-fab[active="true"] {
+  border-radius: var(--mdui-shape-corner-extra-large);
+  background-color: rgb(var(--mdui-color-primary));
+  color: rgb(var(--mdui-color-on-primary));
+
+}
+
+.container-shell{
+  height: 100%;
+  padding: 10px;
+}
+
+.example-page{
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: height 0.3s ease;
+}
