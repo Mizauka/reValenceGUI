@@ -22,13 +22,13 @@ html {
 .example-container[page-column="1"] {
   display: flex;
   overflow: hidden;
-  height: overlay;
+  height: auto;
 }
 
 .example-page {
   height: 100%;
   flex: 1;
-  overflow: overlay;
+  overflow: auto;
 }
 
 .example-page:not([active]) {
@@ -47,42 +47,13 @@ mdui-fab[active="true"] {
 
 }
 
-.container-shell {
+.container-shell{
   height: 100%;
   padding: 10px;
 }
 
-.example-page {
+.example-page{
   padding-left: 10px;
   padding-right: 10px;
   transition: height 0.3s ease;
-}
-
-/* 1. 定义滚动条宽度和高度 */
-*::-webkit-scrollbar {
-  width: 6px;
-  /* 纵向滚动条宽度 */
-  height: 6px;
-  /* 横向滚动条高度 */
-}
-
-/* 2. 定义滚动条轨道 (Track) */
-*::-webkit-scrollbar-track {
-  background: transparent;
-  /* 通常移动端建议透明或浅色 */
-  border-radius: 3px;
-}
-
-/* 3. 定义滑块 (Thumb) - 核心部分 */
-*::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.2);
-  /* 颜色 */
-  border-radius: 0;
-  /* 圆角 */
-  border: none;
-}
-
-/* 4. 悬停/激活时的滑块颜色 (可选) */
-*::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(0, 0, 0, 0.4);
 }
